@@ -7,7 +7,7 @@ class Voiture {
     private string $immatriculation;
     private string $disponible;
 
-    public function __construct($marque,$modele,$immatriculation,$disponibilite){
+    public function __construct($marque,$modele,$immatriculation,$disponible){
         $this->marque = $marque;
         $this->modele = $modele;
         $this->immatriculation = $immatriculation;
@@ -56,14 +56,14 @@ class Voiture {
         return $this;
     }
 
-    // GET AND SET DE DISPONIBILITE
-    public function getDisponibilite()
+    // GET AND SET DE DISPONIBLE
+    public function getDisponible()
     {
-        return $this->disponibilite;
+        return $this->disponible;
     }
-    public function setDisponibilite($disponibilite)
+    public function setDisponible($disponible)
     {
-        $this->disponibilite = $disponibilite;
+        $this->disponible = $disponible;
 
         return $this;
     }
