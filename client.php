@@ -6,7 +6,7 @@ class Client {
     private string $prenom;
     private string $mail;
     private string $tel;
-    private $contrat = [];
+    private $contrats = [];
 
 
     public function __construct($nom,$prenom,$mail,$tel){

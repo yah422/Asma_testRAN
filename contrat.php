@@ -6,16 +6,25 @@ class Contrat {
     private Voiture $voiture;
     private $dateDebut;
     private $dateFin;
-    private float $prixLocation;
+    private $prixLocation;
 
     public function __construct(Client $client, Voiture $voiture,$dateDebut,$dateFin,$prixLocation){
         $this->client = $client;
         $this->voiture = $voiture;
-        $this->dateDebut = $dateDebut;
-        $this->dateFin = $dateFin;
+
+        $this->dateDebut =  new DateTime($dateDebut);
+        $this->dateFin = new DateTime($dateFin);
         $this->prixLocation = $prixLocation;
+    
+        // ajouter un contrat a un client
+        $this->client->ajouterContrat($this);
     }
 
+
+    public function calculPrixTotal(){
+        $difference = $this->dateDebut->diff($this->dateFin)->days + 1;
+        return $difference * $this->prixLocation . "\n €";
+    }
 
     // GET AND SET DE CLIENT
     public function getClient()

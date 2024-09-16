@@ -13,10 +13,12 @@ $voiture1 = new Voiture("nissan","qashkai","14FG32","disponible");
 
 
 // création de contrats
-$contrat1 = new Contrat($client1,$voiture1,"16/10/25","25/10/25","300");
+$contrat1 = new Contrat($client1,$voiture1,"16-09-25","25-09-25","300");
 
-echo "Contrat de " . $client1->getNom() . " " . $client1->getPrenom();
-echo "Détails du contrat : " ;
+echo "Contrat de " . $client1->getNom() . " " . $client1->getPrenom() ."<br> <br>";
+echo "Détails du contrat : <br> " ;
+$client1->afficherContrat();
+echo "<br> Le prix total de la location est de " .$contrat1->calculPrixTotal() . " \n ";
 
 
 
