@@ -23,7 +23,8 @@ class Client {
 
     public function afficherContrat(){
         foreach($this->contrats as $contrat){
-            echo "Véhicule : " . $contrat->getVoiture()->getMarque() . " " . $contrat->getVoiture()->getModele();
+            echo "Véhicule : " . $contrat->getVoiture()->getMarque() . " " . $contrat->getVoiture()->getModele() . "<br>";
+            echo "Prix : " . $contrat->calculPrixTotal() . "<br>";
         }
     }
     
