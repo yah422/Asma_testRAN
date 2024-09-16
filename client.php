@@ -2,10 +2,10 @@
 
 class Client {
 
-    private $nom;
-    private $prenom;
-    private $mail;
-    private $tel;
+    private string $nom;
+    private string $prenom;
+    private string $mail;
+    private float $tel;
     private $contrat = [];
 
 

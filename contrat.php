@@ -2,13 +2,13 @@
 
 class Contrat {
 
-    private $client;
-    private $voiture;
-    private $dateDebut;
-    private $dateFin;
-    private $prixLocation;
+    private string $client;
+    private string $voiture;
+    private float $dateDebut;
+    private float $dateFin;
+    private float $prixLocation;
 
-    public function __construct(){
+    public function __construct($client,$voiture,$dateDebut,$dateFin,$prixLocation){
         $this->client = $client;
         $this->voiture = $voiture;
         $this->dateDebut = $dateDebut;

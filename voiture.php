@@ -2,12 +2,12 @@
 
 class Voiture {
 
-    private $marque;
-    private $modele;
-    private $immatriculation;
-    private $disponibilite;
+    private string $marque;
+    private string $modele;
+    private string $immatriculation;
+    private string $disponibilite;
 
-    public function __construct(){
+    public function __construct($marque,$modele,$immatriculation,$disponibilite){
         $this->marque = $marque;
         $this->modele = $modele;
         $this->immatriculation = $immatriculation;
