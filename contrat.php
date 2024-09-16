@@ -7,7 +7,15 @@ class Contrat {
     private $dateDebut;
     private $dateFin;
     private $prixLocation;
-    
+
+    public function __construct(){
+        $this->client = $client;
+        $this->voiture = $voiture;
+        $this->dateDebut = $dateDebut;
+        $this->dateFin = $dateFin;
+        $this->prixLocation = $prixLocation;
+    }
+
 
     // GET AND SET DE CLIENT
     public function getClient()
