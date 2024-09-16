@@ -5,14 +5,18 @@ class Voiture {
     private string $marque;
     private string $modele;
     private string $immatriculation;
-    private string $disponibilite;
+    private string $disponible;
 
     public function __construct($marque,$modele,$immatriculation,$disponibilite){
         $this->marque = $marque;
         $this->modele = $modele;
         $this->immatriculation = $immatriculation;
-        $this->disponibilite = $disponibilite;
+        $this->disponible = $disponible;
 
+    }
+
+    public function estdisponible(){
+        return $this->disponible;
     }
 
     

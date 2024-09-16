@@ -18,6 +18,15 @@ class Contrat {
     
         // ajouter un contrat a un client
         $this->client->ajouterContrat($this);
+    
+        if ($this->dateDebut > $this->dateFin) {
+            return "La date doit être antérieur ou égale à la date de fin !";
+        }
+
+        if (!$voiture->estdisponible()) {
+            return "La voiture n'est pas disponible :(";
+
+        }
     }
 
 
