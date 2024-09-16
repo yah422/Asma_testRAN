@@ -7,6 +7,14 @@ class Voiture {
     private $immatriculation;
     private $disponibilite;
 
+    public function __construct(){
+        $this->marque = $marque;
+        $this->modele = $modele;
+        $this->immatriculation = $immatriculation;
+        $this->disponibilite = $disponibilite;
+
+    }
+
     
     // GET AND SET DE MARQUE
     public function getMarque()
@@ -55,5 +63,5 @@ class Voiture {
 
         return $this;
     }
-    
+
 }
