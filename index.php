@@ -15,7 +15,8 @@ $voiture1 = new Voiture("nissan","qashkai","14FG32","disponible");
 // création de contrats
 $contrat1 = new Contrat($client1,$voiture1,"16/10/25","25/10/25","300");
 
-
+echo "Contrat de " . $client1->getNom() . " " . $client1->getPrenom();
+echo "Détails du contrat : " ;
 
 
 

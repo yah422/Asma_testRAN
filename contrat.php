@@ -2,10 +2,10 @@
 
 class Contrat {
 
-    private string $client;
-    private string $voiture;
-    private float $dateDebut;
-    private float $dateFin;
+    private Client $client;
+    private Voiture $voiture;
+    private $dateDebut;
+    private $dateFin;
     private float $prixLocation;
 
     public function __construct(Client $client, Voiture $voiture,$dateDebut,$dateFin,$prixLocation){
