@@ -6,7 +6,8 @@ class Client {
     private $prenom;
     private $mail;
     private $tel;
-    private $contrat;
+    private $contrat = [];
+
 
     public function __construct($nom,$prenom,$mail,$tel){
         $this->nom = $nom;
@@ -14,6 +15,16 @@ class Client {
         $this->mail = $mail;
         $this->tel = $tel;
 
+    }
+
+    public function ajouterContrat(Contrat $contrat){
+        $this->contrats [] = $contrat;
+    }
+
+    public function afficherContrat(){
+        foreach($this->contrats as $contrat){
+            echo "Véhicule : " . $contrat->getVoiture()->getMarque() . " " . $contrat->getVoiture()->getModele();
+        }
     }
     
 
