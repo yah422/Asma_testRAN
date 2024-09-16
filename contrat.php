@@ -8,7 +8,7 @@ class Contrat {
     private float $dateFin;
     private float $prixLocation;
 
-    public function __construct($client,$voiture,$dateDebut,$dateFin,$prixLocation){
+    public function __construct(Client $client, Voiture $voiture,$dateDebut,$dateFin,$prixLocation){
         $this->client = $client;
         $this->voiture = $voiture;
         $this->dateDebut = $dateDebut;
